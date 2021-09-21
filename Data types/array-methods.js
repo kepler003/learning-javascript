@@ -24,3 +24,12 @@ numbers.splice(-1, 0, ...deleted);
 
 console.log(numbers);
 
+const randomNumbers = [10, 8, 9, 10, 5, 5, 1, 2, 1];
+const multipliedNumbers = randomNumbers.reduce((accumulator, item) => accumulator * item, 1);
+console.log(multipliedNumbers);
+
+const reducedNumbers = randomNumbers.reduceRight((accumulator, item) => {
+  console.log(accumulator);
+  return accumulator - item;
+}, 0);
+console.log(reducedNumbers);
