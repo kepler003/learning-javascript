@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom navigation</title>
+</head>
+<body>
+
+  <div>Begin</div>
+  <ul>
+    <li>
+      <b>Information</b>
+    </li>
+  </ul>
+
+  <table id="table">
+    <tr>
+      <td>One</td>
+      <td>Two</td>
+    </tr>
+    <tr>
+      <td>Three</td>
+      <td>Four</td>
+    </tr>
+  </table>
+
+  <script>
+    let td = table.rows[0].cells[1];
+    td.style.backgroundColor = "red";
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
