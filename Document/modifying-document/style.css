@@ -1,0 +1,19 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 24px;
+}
+  
+.alert {
+  width: 100%;
+  padding: 24px;
+  font-size: 16px;
+  background-color: hsl(120, 73%, 83%);
+  border: 2px solid hsl(120, 50%, 69%);
+  border-radius: 8px;
+}
