@@ -1,0 +1,33 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+  font-size: 16px;
+}
+
+.notification {
+  width: 100%;
+  max-width: 300px;
+  padding: 16px;
+  background-color: rgb(220, 220, 255);
+  border: 2px solid rgb(180, 180, 255);
+  border-radius: 8px;
+  color: #444;
+  animation: show 250ms ease-in-out;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
