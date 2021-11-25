@@ -1,0 +1,38 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+  font-size: 24px;
+}
+
+.clock {
+  margin-top: 64px;
+  text-align: center;
+}
+
+.hours::after,
+.minutes::after {
+  content: ':';
+}
+
+.hours {
+  color: red;
+}
+
+.minutes {
+  color: green;
+}
+
+.seconds {
+  color: blue;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+}
