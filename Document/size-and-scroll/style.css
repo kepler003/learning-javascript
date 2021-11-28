@@ -1,0 +1,8 @@
+
+#example {
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  border: 25px solid #E8C48F;
+  overflow: auto;
+}
