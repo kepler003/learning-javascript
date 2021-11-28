@@ -1,0 +1,19 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+}
+
+.example {
+  width: 300px;
+  height: 300px;
+  padding: 16px;
+  border: 2px solid lightblue;
+  border-radius: 4px;
+  overflow: auto;
+}
