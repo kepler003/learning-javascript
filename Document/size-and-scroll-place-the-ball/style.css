@@ -1,0 +1,24 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 24px;
+}
+
+.field {
+  width: 400px;
+  height: 300px;
+  border: 10px solid black;
+  background-color: lightgreen;
+}
+
+.ball {
+  width: 50px;
+  aspect-ratio: 1;
+  background-color: #fff;
+  border-radius: 50%;
+}
