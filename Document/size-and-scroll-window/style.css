@@ -1,0 +1,17 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 200vh;
+  padding: 24px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: #888;
+}
