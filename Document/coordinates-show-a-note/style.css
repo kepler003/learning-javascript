@@ -1,0 +1,27 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 200vh;
+  padding: 24px;
+  font-size: 16px;
+}
+
+.anchor {
+  max-width: 500px;
+  margin-top: 100px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 5px 40px hsla(0, 0%, 0%, .15);
+}
+
+.note {
+  max-width: 200px;
+  padding: 12px;
+  background-color: #fff;
+  border: 1px solid #AAA;
+}
