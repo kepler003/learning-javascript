@@ -1,0 +1,25 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 48px;
+}
+
+.field {
+  width: 400px;
+  height: 300px;
+  border: 15px solid black;
+  background-color: rgb(100, 200, 100);
+}
+
+.ball {
+  width: 60px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 250ms ease-in-out;
+}
