@@ -1,0 +1,42 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 48px;
+}
+
+ul {
+  list-style: none
+}
+
+.card {
+  max-width: 400px;
+  padding: 24px;
+  background-color: #EEE;
+  border-top: 2px solid lightgreen;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card__btn {
+  padding: 4px;
+  background-color: transparent;
+  border: none;
+  color: darkred;
+  font-size: 16px;
+}
+
+.card__btn:hover {
+  cursor: pointer;
+}
