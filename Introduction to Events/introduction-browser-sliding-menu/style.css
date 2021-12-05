@@ -1,0 +1,40 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 48px;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button::before {
+  content: '';
+  display: inline-block;
+  max-height: 6px;
+  margin-right: 0.25em;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid green;
+  transition: 50ms ease-in-out;
+}
+
+button.isOpen::before {
+  transform: rotate(90deg);
+}
