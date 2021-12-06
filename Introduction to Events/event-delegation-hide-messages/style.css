@@ -1,0 +1,84 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2.4rem;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.msg {
+  max-width: 400px;
+  margin-bottom: 1.6rem;
+  padding: 2.4rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 5px 30px hsla(0, 0%, 0%, .15);
+  transform-origin: top;
+  transition: opacity 125ms ease-in-out,
+              transform 250ms ease-in-out;
+}
+
+.msg__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.6rem;
+}
+
+.msg__heading {
+  color: #666;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.msg__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #666;
+  transition: color 150ms;
+}
+
+.msg__btn:hover {
+  cursor: pointer;
+  color: rgb(200, 70, 70);
+}
+
+.msg__btn::before,
+.msg__btn::after {
+  content: '';
+  width: 0.4rem;
+  height: 1.6rem;
+  background-color: currentColor;
+  border-radius: 0.2rem;
+  position: absolute;
+}
+
+.msg__btn::before {
+  transform: rotate(-45deg);
+}
+
+.msg__btn::after {
+  transform: rotate(45deg);
+}
+
+.msg__body {
+  color: #444;
+}
