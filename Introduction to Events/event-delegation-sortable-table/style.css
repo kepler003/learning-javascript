@@ -1,0 +1,32 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2.4rem;
+  font-size: 1.6rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 1.2rem;
+  text-align: center;
+  border: 0.1rem solid #666;
+  transition: 100ms ease-in-out;
+}
+
+th:hover {
+  cursor: pointer;
+  background-color: hsl(54, 100%, 61%);
+}
