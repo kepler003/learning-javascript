@@ -1,0 +1,52 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2.4rem;
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
+}
+
+.clock {
+  display: inline-block;
+  padding: 1.6rem;
+  background-color: yellow;
+  border: 1px dashed #000;
+  font-size: 2.4rem;
+}
+
+.clock span:nth-child(1) {
+  color: red;
+}
+
+.clock span:nth-child(2) {
+  color: green;
+}
+
+.clock span:nth-child(3) {
+  color: blue;
+}
+
+.clock span:not(:last-child)::after {
+  content: ' :';
+}
+
+.tooltip {
+  display: inline-block;
+  padding: 1.2rem 1.6rem;
+  background-color: #FFF;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 0.8rem;
+  box-shadow: 0.2rem 0.3rem 0.2rem hsla(0, 0%, 0%, .4);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
