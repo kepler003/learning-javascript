@@ -28,11 +28,21 @@ document.addEventListener('mousedown', function(e) {
   }
 
   document.addEventListener('mousemove', onMouseMove);
+  window.onblur = () => {
+    document.removeEventListener('mousemove', onMouseMove);
+    document.onmouseup = null;
+    window.onblur = null;
+    target.ondragstart = null;
+  }
+
+  target.ondragstart = (e) => e.preventDefault();
   
   // Prepare for mouseout
   document.onmouseup = function() {
     document.removeEventListener('mousemove', onMouseMove);
     document.onmouseup = null;
+    window.onblur = null;
+    target.ondragstart = null;
   }
 
   // ### Helper functions
@@ -44,10 +54,10 @@ document.addEventListener('mousedown', function(e) {
     let posY = y - (clientY - targetTop);
 
     if (posX < 0) posX = 0;
-    if (posY < 0) posY = 0;
+    if (posY < 0 + window.scrollY) posY = 0 + window.scrollY;
 
     if (posX + target.offsetWidth > clientWidth) posX = clientWidth - target.offsetWidth;
-    if (posY + target.offsetHeight > clientHeight) posY = clientHeight - target.offsetHeight;
+    if (posY + target.offsetHeight > clientHeight + window.scrollY) posY = clientHeight - target.offsetHeight + window.scrollY;
     
     target.style.left = `${posX}px`;
     target.style.top = `${posY}px`;
