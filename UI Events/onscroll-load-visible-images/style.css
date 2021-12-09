@@ -1,0 +1,25 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 2.4rem;
+  font-size: 1.6rem;
+}
+
+div {
+  width: 100%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+div p {
+  margin: 1em 0;
+}
