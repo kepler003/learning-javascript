@@ -1,0 +1,26 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  min-height: 200vh;
+  padding: 2.4rem;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+.draggable {
+  width: 20rem;
+  height: 20rem;
+  margin: 0.8rem;
+  background-color: hsl(0, 0%, 90%);
+  border-radius: 0.4rem;
+}
