@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form elements</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <form>
+    <fieldset name="userdata">
+      <legend>Sign in</legend>
+      <input type="text" name="username">
+      <input type="password" name="password">
+      <label> Below 18
+        <input type="radio" name="age" value="below 18">
+      </label>
+      <label> 18 or above
+        <input type="radio" name="age" value="18 or above">
+      </label>
+      <br>
+      <select name="continent" multiple>
+        <option value="Europe" selected>Europe</option>
+        <option value="Africa" selected>Africa</option>
+        <option value="Asia">Asia</option>
+      </select>
+    </fieldset>
+  </form>
+</body>
+</html>
